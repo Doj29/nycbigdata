@@ -154,7 +154,7 @@ function legend() {
   lul.style.display = show ? "" : "none";
   lul.innerHTML = LUC.map(c => sw(c.color, c.name)).join("") + sw(NO_LU, "No NYC tax lots");
   document.getElementById("note").textContent = `Top ${DATA.top} flows each month by trips per day; within-zone trips excluded. ` +
-    "Line width and number of moving dots grow with the flow; dots travel from origin to destination; flow colour shows the origin borough. Hover over a zone or a flow for details." +
+    "Line width and number of moving dots grow with the flow; dots travel from origin to destination; flow colour shows the origin borough." +
     (HAS_LU ? ` Land use: class with the largest share of tax-lot area in the zone, NYC PLUTO ${DATA.lu_version} (current release, not 2019).` : "");
 }
 modeSel.value = mode;
